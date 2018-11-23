@@ -44,9 +44,9 @@ static struct rt_thread thread2;
 static void thread2_entry(void *parameter)
 {
     int result;
-    char buf = 'A';    
+    char buf = 'A';
     rt_uint8_t cnt = 0;
-    
+
     while (1)
     {
         if (cnt == 8)
@@ -110,7 +110,7 @@ int msgq_sample(void)
                    RT_NULL,
                    &thread1_stack[0],
                    sizeof(thread1_stack),
-									 THREAD_PRIORITY, THREAD_TIMESLICE);
+                   THREAD_PRIORITY, THREAD_TIMESLICE);
     rt_thread_startup(&thread1);
 
     rt_thread_init(&thread2,
@@ -118,8 +118,8 @@ int msgq_sample(void)
                    thread2_entry,
                    RT_NULL,
                    &thread2_stack[0],
-                   sizeof(thread2_stack), 
-									 THREAD_PRIORITY, THREAD_TIMESLICE);
+                   sizeof(thread2_stack),
+                   THREAD_PRIORITY, THREAD_TIMESLICE);
     rt_thread_startup(&thread2);
 
     return 0;

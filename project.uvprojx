@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER, STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>.\applications;..\test_project;.\drivers;.\Libraries\CMSIS\Device\ST\STM32F1xx\Include;.\Libraries\STM32F1xx_HAL_Driver\Inc;.\Libraries\CMSIS\Include;.\rt-thread\include;.\rt-thread\libcpu\arm\cortex-m3;.\rt-thread\libcpu\arm\common;.\rt-thread\components\drivers\include;.\rt-thread\components\finsh;.\rt-thread\components\libc\compilers\armlibc;.\rt-thread\components\drivers\misc</IncludePath>
+              <IncludePath>.\applications;.\drivers;.\Libraries\CMSIS\Device\ST\STM32F1xx\Include;.\Libraries\STM32F1xx_HAL_Driver\Inc;.\Libraries\CMSIS\Include;.\rt-thread\include;.\rt-thread\libcpu\arm\cortex-m3;.\rt-thread\libcpu\arm\common;.\rt-thread\components\drivers\include;.\rt-thread\components\finsh;.\rt-thread\components\libc\compilers\armlibc;.\rt-thread\components\drivers\misc;..\RT_Test</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -398,6 +398,16 @@
               <FileName>dynmem_sample.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\applications\dynmem_sample.c</FilePath>
+            </File>
+            <File>
+              <FileName>mempool_sample.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\mempool_sample.c</FilePath>
+            </File>
+            <File>
+              <FileName>interrupt_sample.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\interrupt_sample.c</FilePath>
             </File>
           </Files>
         </Group>

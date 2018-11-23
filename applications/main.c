@@ -14,7 +14,9 @@
 #include <rtthread.h>
 #include <rtdevice.h>
 
-#define LED_PIN 3
+#define LED_PIN 5
+
+int led(void);
 
 int main(void)
 {
