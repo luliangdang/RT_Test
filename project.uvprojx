@@ -15,7 +15,7 @@
         <TargetCommonOption>
           <Device>STM32F103C8</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F1xx_DFP.2.2.0</PackID>
+          <PackID>Keil.STM32F1xx_DFP.1.0.5</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x5000) IROM(0x08000000,0x10000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -114,8 +114,8 @@
           <SimDlgDllArguments>-pSTM32F103C8</SimDlgDllArguments>
           <TargetDllName>SARMCM3.DLL</TargetDllName>
           <TargetDllArguments></TargetDllArguments>
-          <TargetDlgDll>TCM.DLL</TargetDlgDll>
-          <TargetDlgDllArguments>-pCM3</TargetDlgDllArguments>
+          <TargetDlgDll>DARMSTM.DLL</TargetDlgDll>
+          <TargetDlgDllArguments>-pSTM32F103C8</TargetDlgDllArguments>
         </DllOption>
         <DebugOption>
           <OPTHX>
@@ -385,29 +385,9 @@
               <FilePath>.\applications\main.c</FilePath>
             </File>
             <File>
-              <FileName>msgq_sample.c</FileName>
+              <FileName>creat_thread.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\applications\msgq_sample.c</FilePath>
-            </File>
-            <File>
-              <FileName>signal_sample.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\applications\signal_sample.c</FilePath>
-            </File>
-            <File>
-              <FileName>dynmem_sample.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\applications\dynmem_sample.c</FilePath>
-            </File>
-            <File>
-              <FileName>mempool_sample.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\applications\mempool_sample.c</FilePath>
-            </File>
-            <File>
-              <FileName>interrupt_sample.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\applications\interrupt_sample.c</FilePath>
+              <FilePath>.\applications\creat_thread.c</FilePath>
             </File>
           </Files>
         </Group>
